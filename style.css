@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    
+}
+
+.content{
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    
+}
+
+.page-title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #06833e;
+}
+
+.logo{
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 30px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 25px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  animation: fadeIn 0.8s ease-in-out;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+    margin: 8px 0 5px;
+    font-weight: 500;
+}
+
+form input, 
+form select{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.15);
+    color: #fff;
+}
+
+/* Style the select box */
+select {
+    background: linear-gradient(135deg, #00d4ff, #007bff); /* nice gradient */
+    color: #fff; /* text color */
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+
+
+select option {
+  background: #1c1f2b;
+  color: #fff;     
+  padding: 10px;
+}
+
+
+form input::placeholder {
+  color: #ccc;
+}
+
+form input:focus,
+form select:focus {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 6px #00d4ff;
+}
+
+small {
+  font-size: 12px;
+  color: #bbb;
+  margin-bottom: 12px;
+}
+
+.btn {
+  background: linear-gradient(135deg, #00d4ff, #007bff);
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #009ecb, #0056b3);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
